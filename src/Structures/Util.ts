@@ -145,7 +145,7 @@ class Util {
 				try {
 
 					// The put method is used to fully refresh all commands in the guild with the current set
-					const data = await rest.put(
+					await rest.put(
 						Routes.applicationCommands("636595833801801748"),
 						{ body: commandsArray },
 					);
@@ -159,7 +159,7 @@ class Util {
 				try {
 
 					// The put method is used to fully refresh all commands in the guild with the current set
-					const data = await rest.put(
+					await rest.put(
 						Routes.applicationGuildCommands("686224747042045952", "636596069421154323"),
 						{ body: commandsArray },
 					);
