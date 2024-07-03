@@ -1,0 +1,52 @@
+{
+	"name": "da-boiz-bot",
+	"version": "2.0.0",
+	"description": "A Discord.JS Bot that was created for (da boiz) the fun of it. This project is never complete - I will continue to add onto it.",
+	"main": "dist/bot.js",
+	"dependencies": {
+		"discord.js": "^14.15.3",
+		"dotenv": "^8.2.0",
+		"glob": "^7.1.6",
+		"moment": "^2.29.4",
+		"ms": "^2.1.3",
+		"mysql2": "^3.10.2",
+		"node-fetch": "^2.6.1",
+		"node-schedule": "^1.3.3",
+		"path": "^0.12.7",
+		"relevant-urban": "^2.0.0",
+		"util": "^0.12.3"
+	},
+	"devDependencies": {
+		"@types/ms": "^0.7.31",
+		"@types/node": "^14.14.30",
+		"@types/node-fetch": "^2.5.11",
+		"@types/node-schedule": "^1.3.1",
+		"@typescript-eslint/eslint-plugin": "^4.28.4",
+		"@typescript-eslint/parser": "^4.28.4",
+		"eslint": "^7.31.0",
+		"nodemon": "^3.0.1",
+		"ts-node": "^9.1.1",
+		"typescript": "^5.3.3"
+	},
+	"scripts": {
+		"start": "node .",
+		"build": "rm -rf dist && tsc -p tsconfig.json",
+		"dev": "ts-node src/bot.ts",
+		"prod": "rm -rf dist && tsc -p tsconfig.json && node ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Cuzeth/Main-Discord-Bot.git"
+	},
+	"keywords": [
+		"Discord",
+		"bot",
+		"Discord.js"
+	],
+	"author": "Cuzeth",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Cuzeth/Main-Discord-Bot/issues"
+	},
+	"homepage": "https://github.com/Cuzeth/Main-Discord-Bot#readme"
+}
