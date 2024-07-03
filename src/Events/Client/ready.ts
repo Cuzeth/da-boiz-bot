@@ -1,6 +1,6 @@
 import Event from '../../Structures/Event';
 import DaBoizClient from '../../Structures/DaBoizClient';
-import { ActivityType, Guild, GuildBasedChannel, TextChannel } from 'discord.js';
+import { EmbedBuilder, ActivityType, Guild, GuildBasedChannel, TextChannel, ColorResolvable } from 'discord.js';
 
 module.exports = class extends Event {
 
@@ -31,10 +31,9 @@ module.exports = class extends Event {
 			})
 		})
 
-		const { EmbedBuilder } = require('discord.js')
 		const onlineEmbed = new EmbedBuilder()
 			.setTitle("Now online")
-			.setColor(`${this.client.utils.getRandomColor()}`)
+			.setColor(`${this.client.utils.getRandomColor()}` as ColorResolvable)
 			.setTimestamp();
 
 		const channel = this.client.channels.cache.get('676803722478747678');
