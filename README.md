@@ -17,6 +17,15 @@ DB_NAME=
 - To run the project in development, run `npm run build` or `yarn dev`
 - To run the project in production, run `npm run build` then `npm start` or `yarn build` then `yarn start`
 
+## Git Commit Guidelines
+
+To maintain a clear and organized commit history, I use card suits to signify different types of changes:
+
+- **Spade (♠︎)**: Major features or significant updates.
+- **Club (♣︎)**: Minor updates or improvements.
+- **Heart (♥︎)**: Bug fixes.
+- **Diamond (♦︎)**: Documentation, comments, and formatting.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
